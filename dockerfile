@@ -1,8 +1,7 @@
-FROM n8nio/n8n: latest
+FROM n8nio/n8n:latest
 
 USER root
 
-
-RUN nom install date-fns-tz
+RUN npm install date-fns-tz date-fns
 
 USER node
